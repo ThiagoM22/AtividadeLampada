@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Atividade Formativa 01 - Atividade 4</title>
+</head>
+
+<body>
+    <header>
+        <div id="faixa-superior"></div>
+        <div id="menu">
+            <a href="index.html">
+                <img id="logo" src="img/logo.png" alt="Logotipo SENAI" />
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="atividade1.html">Atividade 1</a>
+                <a href="atividade2.html">Atividade 2</a>
+                <a href="atividade3.html">Atividade 3</a>
+                <a href="atividade4.html">Atividade 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container">
+        <h1>Atividade 4 - Calculadora de Desconto</h1>
+
+        <p>
+            Com base nos valores informados pelo usuário, 
+            implemente a calculadora abaixo para determinar:
+        </p>
+        <ul>
+            <li>Percentual de desconto (%);</li>
+            <li>Valor do desconto (R$);</li>
+            <li>Valor líquido do pedido (R$):</li>
+            <li>Valor do pedido >= R$ 500 ===> Desconto de 0,5%</li>
+            <li>Valor do pedido >= R$ 1000 ===> Desconto de 0,8%</li>
+            <li>Valor do pedido >= R$ 1500 ===> Desconto de 1,0%</li>
+            <li>Valor do pedido >= R$ 2000 ===> Desconto de 1,5%</li>
+        </ul>
+        
+        <form id="frmCalc" name="frmCalc" action="#">
+            <div id="esquerda">
+                <p>
+                    <label for="inValorPedido">Valor do pedido:</label>
+                </p>
+                <p>
+                    <label for="inPercDesc">Percentual de desconto:</label>
+                </p>
+                <p>
+                    <label for="inValDesc">Valor do desconto:</label>
+                </p>
+                <p>
+                    <label for="inValFinal">Valor líquido do pedido:</label>
+                </p>
+            </div>
+            <div id="direita">
+                <input id="inValorPedido" name="inValorPedido" type="number" placeholder="Valor do pedido" />
+                <input id="inPercDesc" name="inPercDesc" type="number" value="0" readonly />            
+                <input id="inValDesc" name="inValDesc" type="number" value="0" readonly />            
+                <input id="inValFinal" name="inValFinal" type="number" value="0" readonly />
+            </div>
+        </form>
+        <div class="div-botoes">
+            <button onclick="calcular()" id="btnEnviar" name="btnEnviar" type="button">Calcular</button>  
+        </div>            
+    </div>
+    <br />
+
+    <footer>
+        SENAI Jaú | Prof Castello<br />
+        Curso Técnico em Desenvolvimento de Sistemas
+    </footer>
+</body>
+<script src="js/scripts.js"></script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Atividade Formativa 01 - Atividade 3</title>
+</head>
+
+<body>
+    <header>
+        <div id="faixa-superior"></div>
+        <div id="menu">
+            <a href="index.html">
+                <img id="logo" src="img/logo.png" alt="Logotipo SENAI" />
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="atividade1.html">Atividade 1</a>
+                <a href="atividade2.html">Atividade 2</a>
+                <a href="atividade3.html">Atividade 3</a>
+                <a href="atividade4.html">Atividade 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="container">
+        <h1>Atividade 3 - Validação de Form</h1>
+
+        <p>
+            Implemente uma validação em JavaScript para os dados
+            do Form abaixo, obedecendo as seguintes regras:
+        </p>
+        <ul>
+            <li>Nenhum campo pode ser enviado vazio;</li>
+            <li>Os campos String devem conter pelo menos 5 caracteres;</li>
+            <li>Os campos 'Quantidade' e 'Valor unitário' devem ser positivos;</li>
+            <li>A Div 'mensagem-erro' deve estar sempre oculta. Ela só deve ser 
+                exibida quando o usuário preencher algum valor inválido nos inputs. 
+                Informar a mensagem de erro dentro da Div. Exemplo "O campo nome não
+                pode estar vazio!";
+            </li>
+        </ul>
+
+        <form id="frmRegistro" name="frmRegistro" action="#">
+            <input id="inData" name="inData" type="date">
+            <input id="inCli" name="inCli" type="text" placeholder="Nome do cliente">
+            <input id="inFone" name="inFone" type="tel" placeholder="Telefone">
+            <input id="inMail" name="inMail" type="email" placeholder="E-mail">
+            <input id="inProd" name="inProd" type="text" placeholder="Nome do produto">
+            <input id="inQtd" name="inQtd" type="number" placeholder="Quantidade">
+            <input id="inVal" name="inVal" type="number" placeholder="Valor unitário">
+            <div class="div-botoes">
+                <button onclick="validaForm()" id="btnEnviar" name="btnEnviar" type="button">Enviar</button>  
+            </div>            
+        </form>
+
+        <div id="mensagem-erro">Mensagem de erro:</div>
+    </div>
+
+    <footer>
+        SENAI Jaú | Prof Castello<br />
+        Curso Técnico em Desenvolvimento de Sistemas
+    </footer>
+</body>
+<script src="js/scripts.js"></script>
+</html>
